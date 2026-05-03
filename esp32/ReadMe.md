@@ -40,8 +40,8 @@ Adafruit_SH1106G display = Adafruit_SH1106G(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, 
 WiFiUDP udp;
 
 // ====================== WIFI ======================
-const char* ssid = "EloiStreeWifi2G";
-const char* password = "11234566";
+const char* ssid = "WIFI NAME";
+const char* password = "PASSWORD";
 
 #define UDP_PORT 3615
 
