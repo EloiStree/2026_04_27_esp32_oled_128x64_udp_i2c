@@ -69,40 +69,6 @@ print(f"Listening for 128x64 frames on UDP port {PORT}...")
 data_current = bytearray(1024)
 data_previous = bytearray(1024)
 
-# def get_x_y_lrtd(x, y)->bool:
-#     index = y * WIDTH + x
-#     byte_index = index >> 3
-#     bit_index = index & 0x07
-#     return (data[byte_index] >> bit_index) & 1
-
-# def set_x_y_lrtd(x, y, value:bool):
-#     global previous_data, new_data
-#     index = y * WIDTH + x
-#     byte_index = index >> 3
-#     bit_index = index & 0x07
-#     if value:
-#         data[byte_index] |= (1 << bit_index)
-#     else:
-#         data[byte_index] &= ~(1 << bit_index)
-
-# def set_1d_index_lrtd(index, value:bool):
-#     global previous_data, new_data
-#     byte_index = index >> 3
-#     bit_index = index & 0x07
-#     if value:
-#         data[byte_index] |= (1 << bit_index)
-#     else:
-#         data[byte_index] &= ~(1 << bit_index)
-
-# previous_data = bytearray(1024)
-# new_data = bytearray(1024)
-# def copy_current_to_previous():
-#     global previous_data, new_data
-#     for i in range(1024):
-#         if data[i] != previous_data[i]:
-#             new_data[i] = data[i]
-#         previous_data[i] = data[i]
-
 
 ## KEEP DONT REMOVE CODE IN GODOT to send.
 # func set_next_push_byte_as_array_bool(array:Array[bool]) -> void:
