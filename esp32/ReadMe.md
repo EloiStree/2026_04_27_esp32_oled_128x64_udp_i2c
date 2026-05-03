@@ -4,42 +4,23 @@
 
 
 ``` cpp
-
-## ADD
 ## Adafruit SH110X
 ## Adafruit GFX Library
- 
+
 #include <WiFi.h>
 #include <WiFiUdp.h>
-
-// ====================== DISPLAY ======================
-// Choose ONE of the following libraries:
-
-// Option 1: Adafruit (recommended for GFX compatibility)
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SH110X.h>
-
-// Option 2: ThingPulse (very popular for ESP32)
-// #include <SH1106Wire.h>   // from ESP8266_OLED_SSD1306 library by ThingPulse
-
-// Pins (change if needed)
-#define SDA_PIN 4    // GP4
-#define SCL_PIN 5    // GP5
-
+#define SDA_PIN 4    
+#define SCL_PIN 5    
 #define SCREEN_WIDTH 128
 #define SCREEN_HEIGHT 64
 #define OLED_ADDR    0x3C
 
-// Adafruit_SH110X
 Adafruit_SH1106G display = Adafruit_SH1106G(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
-
-// Or for ThingPulse:
-// SH1106Wire display(OLED_ADDR, SDA_PIN, SCL_PIN);
-
 WiFiUDP udp;
 
-// ====================== WIFI ======================
 const char* ssid = "WIFI NAME";
 const char* password = "PASSWORD";
 
