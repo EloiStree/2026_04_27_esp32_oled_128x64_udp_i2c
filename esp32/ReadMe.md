@@ -4,8 +4,8 @@
 
 
 ``` cpp
-## Adafruit SH110X
-## Adafruit GFX Library
+// Adafruit SH110X
+// Adafruit GFX Library
 
 #include <WiFi.h>
 #include <WiFiUdp.h>
