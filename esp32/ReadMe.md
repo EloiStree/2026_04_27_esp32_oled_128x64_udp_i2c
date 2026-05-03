@@ -3,7 +3,7 @@
 - Adafruit GFX Library
 
 
-``` Arduino
+``` cpp
 
 ## ADD
 ## Adafruit SH110X
