@@ -24,7 +24,7 @@ WiFiUDP udp;
 
 // ====================== WIFI ======================
 const char* ssid = "EloiStreeWifi2G";
-const char* password = "";
+const char* password = "11234566";
 
 #define UDP_PORT 3615
 
@@ -162,6 +162,8 @@ void loop() {
   }
 
   if (packetSize == 1024) {
+    if (received_udp_message==false)
+      display.clearDisplay();
     received_udp_message = true;
     udp.read(data_current, 1024);
 
